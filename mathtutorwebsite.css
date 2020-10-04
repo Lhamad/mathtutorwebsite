@@ -76,9 +76,4 @@ body, html {
 /*Media Queries */
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media screen and (max-width: 600px) {
-
- 
-
-
-  
+@media screen and (max-width: 600px) {}
