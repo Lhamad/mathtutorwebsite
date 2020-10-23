@@ -36,7 +36,7 @@ body, html {
 .topnav {
   background-color: #333;
   overflow: hidden;
-}
+ }
 
 /* Style the links inside the navigation bar */
 
@@ -55,25 +55,65 @@ body, html {
 
 /* Top Navigation Menu */
 .topnav a {
-  float: none;
-  display: block;
+  display: flex;
+  flex:column; 
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 20px;
+  padding: 10px 10px;
+  color:white;
+}
+
+.topnav{text-align: center;
+}
+/* Content of page */
+.siteintro{
+  background-color: DodgerBlue;
+ padding: 20px;
+ display: flex;
+ flex-direction: column;
+}
+
+.siteintro1{margin: 20px 10px;
+  width:90%;
+   border: 5px solid red;} 
+  .siteintro2{margin: 20px 10px;
+    width:90%;
+    border: 5px solid red;}
+  .siteintro3{margin: 20px 20px;
+    width:90%;
+    border: 5px solid red;}
+/*Media Queries */
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 600px) {.hero-text {color:red;
+font-size: 30px;}
+.topnav{
+  display: flex;
+  flex-direction: row;
   text-align: center;
   width: 100%;
   font-size: 20px;
   padding: 10px 10px;
+  color:white;
 }
-
-
-/* Content of page */
 .siteintro{
-  display: flex;
-  flex-direction: column;
+border: #333;  
+display: flex;
+flex-direction: row;
   background-color: DodgerBlue;
-  width: 600px;
-  padding: 20px;
-  align-items: center;
-}
-/*Media Queries */
+margin: 20px 20px;
+align-items: center;
+  justify-content: center;}  
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media screen and (max-width: 600px) {}
+.siteintro1{margin: 20px 10px;
+width:33%;
+ border: 5px solid red;} 
+.siteintro2{margin: 20px 10px;
+  width:33%;
+  border: 5px solid red;}
+.siteintro3{margin: 20px 20px;
+  width:33%;
+  border: 5px solid red;}
+}
