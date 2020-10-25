@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <head>
+        <link rel="stylesheet" href="contactus.css"
+    </head>
+
+    <script src="contactus.js"></script>
+   
+</body>
+
+
+
+<form action="mailto:someone@example.com" method="post" enctype="text/plain">
+    Name:<br>
+    <input type="text" name="name"><br>
+    Email:<br>
+
+    <input id="test" value="" placeholder="e-mail address">
+<input type="button" value="validate" onclick="validate()">
+
+<br>
+<br>
+Comment:<br>
+<input type="text" name="comment" size="50"><br><br>
+</form>
+<br>
+
+
+
+
+  </form>
+
+  <form name = "checkbox">
+   <label> Reason for Contact:</label><br>
+   <input type="checkbox" id="question" value="question" name="user_question"><label class="light" for="question">Question</label><br>
+   <input type="checkbox" id="comment" value="interest_comment" name="user_comment"><label class="light" for="comment">Comment</label><br>
+   <input type="checkbox" id="reporterror" value="interest_reporterror" name="user_reporterror"><label class="light" for="reporterror">Report and Error</label>
+</form>
+
+
+<input type="submit" value="Submit">
+
+</html>
