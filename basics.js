@@ -1,6 +1,4 @@
 
-    alert("Hello World");
-
 
 
 
@@ -13,3 +11,9 @@ function myFunction() {
     x.style.display = "block";
   }
 }
+
+
+
+
+
+
