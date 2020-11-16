@@ -6,16 +6,17 @@ body, html {
 /* The hero image */
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
-  background-image: linear-gradient(rgba(10, 3, 34, 0.849), rgba(0, 0, 0, 0.5)), url("photographer.jpg");
+  background-image: linear-gradient(rgba(185, 181, 201, 0.849), rgba(117, 98, 133, 0.5)), url("photographer.jpg");
 
   /* Set a specific height */
-  height: 50%;
+  height: 30%;
 
   /* Position and center the image to scale nicely on all screens */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  padding:10px;
 }
 
 /* Place text in the middle of the image */
@@ -26,9 +27,9 @@ body, html {
   top: 50%;
   left: 45%;
   transform: translate(-50%, -50%);
-  color: white;
+  color:red;
   font-style: Bradley Hand, cursive;
-}
+  }
 /* End Header CSS */
 
 /* Top Nav CSS */
@@ -59,61 +60,95 @@ body, html {
   flex:column; 
   align-items: center;
   justify-content: center;
-  width: 100%;
   font-size: 20px;
   padding: 10px 10px;
   color:white;
 }
 
-.topnav{text-align: center;
-}
+.topnav{text-align: center;}
+
 /* Content of page */
 .siteintro{
   background-color: DodgerBlue;
  padding: 20px;
  display: flex;
  flex-direction: column;
+ justify-content: center;
 }
 
 .siteintro1{margin: 20px 10px;
-  width:90%;
-   border: 5px solid red;} 
+  width:85%;
+   border: 3px solid red;
+  padding:10px;} 
   .siteintro2{margin: 20px 10px;
-    width:90%;
-    border: 5px solid red;}
-  .siteintro3{margin: 20px 20px;
-    width:90%;
-    border: 5px solid red;}
-/*Media Queries */
+    width:85%;
+    border: 3px solid red;
+    padding:10px;}
+  .siteintro3{margin: 20px 10px;
+    width:85%;
+    border: 3px solid red;
+    padding:10px;}
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media screen and (min-width: 600px) {.hero-text {color:red;
-font-size: 30px;}
-.topnav{
-  display: flex;
-  flex-direction: row;
-  text-align: center;
-  width: 100%;
-  font-size: 20px;
-  padding: 10px 10px;
-  color:white;
+
+
+/*Media Queries */
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 600px) {
+  .hero-text {color: green;}
+  
+  .siteintro{
+      display: flex;
+      flex-flow: row wrap;
+  }
+  
+
+  .siteintro1{margin: 20px 10px;
+     border: 5px solid red;
+    width: 100%;
+    padding: 10px 10px;}
+
+    .siteintro2{margin: 20px 10px;
+      border: 5px solid red;
+      width: 300px;
+      padding: 10px 10px;}
+    .siteintro3{margin: 20px 10px;
+      border: 5px solid red;
+      width: 300px;
+      padding: 10px 10px;}
+  
 }
-.siteintro{
-border: #333;  
-display: flex;
-flex-direction: row;
-  background-color: DodgerBlue;
-margin: 20px 20px;
-align-items: center;
-  justify-content: center;}  
+
+
+@media only screen and (min-width: 992px){
+
+  .hero-text {color:palevioletred;
+    font-size:20px;}
+
+  .topnav{
+  display:flex;
+  flex:row;}
+
+
+ .siteintro{display:flex;
+flex:row;}
+
 
 .siteintro1{margin: 20px 10px;
-width:33%;
- border: 5px solid red;} 
-.siteintro2{margin: 20px 10px;
-  width:33%;
-  border: 5px solid red;}
-.siteintro3{margin: 20px 20px;
-  width:33%;
-  border: 5px solid red;}
+   border: 5px solid red;
+  width: 50%;
+  padding: 10px 10px;}
+
+  .siteintro2{margin: 20px 10px;
+    border: 5px solid red;
+    width: 200px;
+    padding: 10px 10px;}
+  .siteintro3{margin: 20px 10px;
+    border: 5px solid red;
+    width: 100%;
+    padding: 10px 10px;}
+
 }
+
+
+

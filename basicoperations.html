@@ -9,11 +9,35 @@
    
 </body>
 
+  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
-
-<title>Add program</title>
+  <!-- Top Navigation Menu -->
+  <div class="topnav">
+    <a href="#home" class="active">A Mathological Add-venture!</a>
+    <!-- Navigation links (hidden by default) -->
+    <div id="myLinks">
+      <a href="mathtutorwebsite.html">Home</a>
+      <a href="basics1.html">Test Your Knowledge</a>`
+      <a href="basicoperations.html">Basic Operations</a>
+      <a href="#Geometry">Not in Use</a>
+      <a href="contactus.html">Contact Us</a>
+    </div>
+    <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
   
+
+
+
+
+<h1>Basic Operations</h1>
+<p>To see how each operation works put any number into the text fields below and click submit.</p>
+
+<div class="mainbody">
+<h2 class="addition">Addition</h2>
   <body>
         value1 = <input type="text" id="value1" name="value1" value=""/>
         value2 = <input type="text" id="value2" name="value2" value=""/>
@@ -21,5 +45,31 @@
         Answer = <input type="text" id="answer" name="answer" value=""/>
 
 
+
+        <h2 class="subtraction">Subtraction</h2>
+  
+        value1 = <input type="text" id="value3" name="value3" value=""/>
+        value2 = <input type="text" id="value4" name="value4" value=""/>
+        <input type="button" name="Sumbit" value="Click here" onclick="javascript:subtractNumbers()"/>
+        Answer = <input type="text" id="answer2" name="answer2" value=""/>
+
+
+        <h2 class="multiplication">Multiplication</h2>
+  
+        value1 = <input type="text" id="value5" name="value5" value=""/>
+        value2 = <input type="text" id="value6" name="value6" value=""/>
+        <input type="button" name="Sumbit" value="Click here" onclick="javascript:multiplyNumbers()"/>
+        Answer = <input type="text" id="answer3" name="answer3" value=""/>
+
+        <h2 class="division">Division</h2>
+  
+        value1 = <input type="text" id="value7" name="value7" value=""/>
+        value2 = <input type="text" id="value8" name="value8" value=""/>
+        <input type="button" name="Sumbit" value="Click here" onclick="javascript:divideNumbers()"/>
+        Answer = <input type="text" id="answer4" name="answer4" value=""/>
+
+</div>
+
+  </body>
 
 </html>
